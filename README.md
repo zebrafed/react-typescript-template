@@ -1,50 +1,19 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get React working in Vite with some ESLint rules.
 
-Currently, two official plugins are available:
+# Cypress Testing
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- To get started with Cypress testing, run yarn test
+- I have provided an example test App.cy.tsx
 
-## Expanding the ESLint configuration
+Note: I have created some definition files for better IDE integration. One of which is cypress.d.ts which I have referenced in tsconfig.app.json
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# i18n Integration
 
-- Configure the top-level `parserOptions` property like this:
+Comes setup as standard with i18n and react-i18n. I have already done the setup required to get these translations working with the app and test suite. 
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+# Provided Scripts (you can alternatively use npm)
+- yarn
+- yarn dev
+- yarn test
