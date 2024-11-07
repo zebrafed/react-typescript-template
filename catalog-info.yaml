@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: react-typescript-template
+  annotations:
+    github.com/project-slug: zebrafed/react-typescript-template
+spec:
+  type: other
+  lifecycle: unknown
+  owner: adlington95
