@@ -1,0 +1,7 @@
+{
+    "title": "Hi {{name}}. I created this simple translation - the string is located in en/translation.json",
+    "description": {
+      "part1": "Create additional folders for other languages - with their translation.json file",
+      "part2": "Contact Marc Adlington if you have any queries"
+    }
+}
